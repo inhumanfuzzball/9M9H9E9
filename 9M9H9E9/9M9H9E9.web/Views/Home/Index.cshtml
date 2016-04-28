@@ -1,0 +1,7 @@
+﻿@model IEnumerable<_9M9H9E9.Data.Post>
+@foreach (var item in Model)
+{
+    <hr />
+    <h4>Posted on @Html.DisplayFor(modelItem => item.Posted) (UTC) <a href="@Html.DisplayFor(modelItem => item.Link)">Link</a></h4>
+    @Html.Raw(item.Body)
+}
